@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3232"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="131dp"
+        android:background="#3A3232"
+        android:gravity="center"
+        android:text="@string/Bienvenido"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="433dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="@string/usuario"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtusuario"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableTint="#594444"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#511010"
+            android:textColorLink="#490F0F" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="@string/clave"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtclave"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableTint="#5C1313"
+            android:ems="10"
+            android:inputType="textPersonName|textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#511010"
+            android:textColorLink="#490F0F" />
+
+        <Button
+            android:id="@+id/btningresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#635C5C"
+            android:drawableEnd="?android:attr/fingerprintAuthDrawable"
+            android:text="@string/Ingresar" />
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#635C5C"
+            android:drawableEnd="@android:drawable/btn_dialog"
+            android:drawableTint="#302828"
+            android:text="@string/Cancelar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
